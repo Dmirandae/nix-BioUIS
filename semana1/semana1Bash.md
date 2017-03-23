@@ -1,8 +1,12 @@
 [Editores DRME(dmirandae@gmail.com), VRA]
+
 [Revisores:]
+
 [GPL 2.x]
+
 [control de cambios:
-v0= 2017-03-13]
+v0= 2017-03-13
+v1= 2017-03-23]
 
 
 #Comandos generales 
@@ -21,12 +25,12 @@ v0= 2017-03-13]
 
 ## para casi todos los casos la sintáxis será
 
-### > comando opciones
+> comando opciones
 
 
-##comandos relacionados  a archivos, mover, revisar archivos; lista de archivos en un directorio 
+#comandos relacionados a archivos, mover, revisar archivos; lista de archivos en un directorio. etc. 
 
-#### ls
+## ls
 
 > man ls #[dado que abre tipo vi/vim, para salir q o :q]
 
@@ -38,14 +42,14 @@ v0= 2017-03-13]
 
 > ls -sh
 
-#### file
+## file
 
 >file out
 
 >file out00
 
 
-#### cat
+## cat
 
 >cat out
 
@@ -57,7 +61,7 @@ v0= 2017-03-13]
 >cat  otro
 
 
-#### head
+## head
 
 >head out
 
@@ -66,30 +70,63 @@ v0= 2017-03-13]
 >head -2 out
 
 
-#### tail
+## tail
 
 >tail out
 
 >tail -2 out
 
 
-#### cp
+## mkdir
+
+>mkdir Directorio1
+
+>mkdir directorio1 
+
+>ls # mayusculas o minusculas importan
+
+
+## cp
 
 >cp out MiOut
 
+>cp out /directorio1/MiOut
 
-#### mv
+
+## mv
 
 >mv MiOut MiOtroOut
 
 
+## rm
 
-#### less
+>rm MiOtroOut
+
+>rm Directorio1
+
+>rm -r Directorio1
+
+
+## less
 
 >less out
 
 
-#### whereis [command]
+## whereis [command]
 
 > whereis ls
 
+## date
+
+> date
+
+>date +%j
+
+
+## history
+
+> history 
+
+
+ 
+ 
