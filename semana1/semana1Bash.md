@@ -48,6 +48,15 @@ v1= 2017-03-23]
 
 >file out00
 
+## stat [filename]
+
+>stat out
+
+>stat -f texto.txt 
+
+>stat --format=%n texto.txt 
+
+>stat --format=nombre:%n,tamaño:%s texto.txt
 
 ## cat
 
