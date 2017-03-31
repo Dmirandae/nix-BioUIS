@@ -1,0 +1,10 @@
+<PMID>10605436</PMID>
+<Year>2000</Year>
+<ArticleTitle>Steroids</ArticleTitle>
+<MedlinePgn>255-60</MedlinePgn>
+<AbstractText>Steroids Abstracts </AbstractText>
+<PMID>10605437</PMID>
+<Year>2001</Year>
+<ArticleTitle>Hormone</ArticleTitle>
+<MedlinePgn>123-34</MedlinePgn>
+<AbstractText>Hormones Abstracts</AbstractText>

@@ -1,0 +1,70 @@
+ProbeID	GeneTitle	GeneSymbol
+1438_at	EPH receptor B3	EPHB3
+1487_at	estrogen-related receptor alpha	ESRRA
+1494_f_at	cytochrome P450, family 2, subfamily A, polypeptide 6	CYP2A6
+1552256_a_at	scavenger receptor class B, member 1	SCARB1
+1552257_a_at	tubulin tyrosine ligase-like family, member 12	TTLL12
+1552258_at	chromosome 2 open reading frame 59	C2orf59
+1552261_at	WAP four-disulfide core domain 2	WFDC2
+1552263_at	mitogen-activated protein kinase 1	MAPK1
+1552264_a_at	mitogen-activated protein kinase 1	MAPK1
+1552266_at	ADAM metallopeptidase domain 32	ADAM32
+1552269_at	spermatogenesis associated 17	SPATA17
+1552271_at	hypothetical protein MGC24975	MGC24975
+1552272_a_at	hypothetical protein MGC24975	MGC24975
+1552274_at	PX domain containing serine/threonine kinase	PXK
+1552275_s_at	PX domain containing serine/threonine kinase	PXK
+1552276_a_at	vacuolar protein sorting 18 homolog (S. cerevisiae)	VPS18
+1552277_a_at	chromosome 9 open reading frame 30 /// transmembrane protein with EGF-like and two follistatin-like domains 1	C9orf30 /// TMEFF1
+1552283_s_at	zinc finger, DHHC-type containing 11	ZDHHC11
+1552286_at	ATPase, H+ transporting, lysosomal 31kDa, V1 subunit E2	ATP6V1E2
+1552287_s_at	AFG3 ATPase family gene 3-like 1 (S. cerevisiae)	AFG3L1
+1552288_at	cartilage intermediate layer protein 2	CILP2
+1552289_a_at	cartilage intermediate layer protein 2	CILP2
+1552291_at	phosphatidylinositol glycan anchor biosynthesis, class X	PIGX
+1552293_at	transmembrane protein 196	TMEM196
+1552295_a_at	solute carrier family 39 (zinc transporter), member 13	SLC39A13
+1552296_at	bestrophin 4	BEST4
+1552299_at	chromosome 6 open reading frame 199	C6orf199
+1552301_a_at	coronin 6	CORO6
+1552307_a_at	tetratricopeptide repeat domain 39C	TTC39C
+1552309_a_at	nexilin (F actin binding protein)	NEXN
+1552310_at	chromosome 15 open reading frame 40	C15orf40
+1552311_a_at	retina and anterior neural fold homeobox 2	RAX2
+1552312_a_at	microfibrillar-associated protein 3	MFAP3
+1552314_a_at	eyes absent homolog 3 (Drosophila)	EYA3
+1552315_at	GTPase, IMAP family member 1	GIMAP1
+1552316_a_at	GTPase, IMAP family member 1	GIMAP1
+1552318_at	GTPase, IMAP family member 1	GIMAP1
+1552319_a_at	kallikrein-related peptidase 8	KLK8
+1552320_a_at	coiled-coil domain containing 65	CCDC65
+1552321_a_at	coiled-coil domain containing 65	CCDC65
+1552322_at	family with sequence similarity 122C	FAM122C
+1552323_s_at	family with sequence similarity 122C	FAM122C
+1552325_at	coiled-coil domain containing 11	CCDC11
+1552326_a_at	coiled-coil domain containing 11	CCDC11
+1552327_at	armadillo repeat containing, X-linked 4	ARMCX4
+1552329_at	retinoblastoma binding protein 6	RBBP6
+1552338_at	goosecoid homeobox	GSC
+1552340_at	Sp7 transcription factor	SP7
+1552343_s_at	phosphodiesterase 7A	PDE7A
+1552344_s_at	CCR4-NOT transcription complex, subunit 7	CNOT7
+1552347_at	crystallin, zeta (quinone reductase)-like 1	CRYZL1
+1552348_at	protease, serine, 33	PRSS33
+1552349_a_at	protease, serine, 33	PRSS33
+1552354_at	chromosome 19 open reading frame 26	C19orf26
+1552355_s_at	chromosome 19 open reading frame 26	C19orf26
+1552359_at	chromosome 8 open reading frame 45	C8orf45
+1552360_a_at	toll-interleukin 1 receptor (TIR) domain containing adaptor protein	TIRAP
+1552362_a_at	liver expressed antimicrobial peptide 2	LEAP2
+1552364_s_at	musashi homolog 2 (Drosophila)	MSI2
+1552365_at	scinderin	SCIN
+1552367_a_at	scinderin	SCIN
+1552368_at	CCCTC-binding factor (zinc finger protein)-like	CTCFL
+1552377_s_at	family with sequence similarity 18, member B2	FAM18B2
+1552378_s_at	retinol dehydrogenase 10 (all-trans)	RDH10
+1552379_at	retinol dehydrogenase 10 (all-trans)	RDH10
+1552381_at	serine-arginine repressor protein (35 kDa)	SRrp35
+1552383_at	family with sequence similarity 71, member A	FAM71A
+1552384_a_at	family with sequence similarity 71, member A	FAM71A
+1552388_at	hypothetical protein FLJ30901	FLJ30901
