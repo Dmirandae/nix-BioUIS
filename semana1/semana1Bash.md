@@ -99,7 +99,7 @@ v1= 2017-03-23]
 
 >cp out MiOut
 
->cp out /directorio1/MiOut
+>cp out directorio1/MiOut
 
 
 ## mv
