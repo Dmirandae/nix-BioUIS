@@ -244,25 +244,25 @@
 
 # join two files (separator is a tab)
 
->join -t $'\t' arrayDat.txt arrayAnnot.txt 
+>join -t $'\\t' arrayDat.txt arrayAnnot.txt 
 
->join -t $'\t' arrayDat.txt arrayAnnot.txt | cut -f 6
+>join -t $'\\t' arrayDat.txt arrayAnnot.txt | cut -f 6
 
 
 # sort by key, then use the probeID as key (probeID is the 2nd and 3rd field in the files)
 
 >sort -k 2 probe2gene.txt > tmp1
 
->sort -k 3 -t $'\t' arrayAnnot.txt > tmp2
+>sort -k 3 -t $'\\t' arrayAnnot.txt > tmp2
 
->join -1 2 -2 3  -t $'\t' tmp1 tmp2 
+>join -1 2 -2 3  -t $'\\t' tmp1 tmp2 
 
 
 # specify which field to output for each file 
 
 >join -1 2 -o '1.1 2.2 2.3 2.4 2.5' arrayAnnotOrdered.txt arrayDat.txt
 
->join -1 2 -2 3  -t $'\t'  -o '1.1 1.2 2.2' tmp1 tmp2
+>join -1 2 -2 3  -t $'\\t'  -o '1.1 1.2 2.2' tmp1 tmp2
 
 
 # split the content into separate files of 50 lines each 
@@ -302,7 +302,7 @@
 
 # rearrange the fields, separated by a tab 
 
->awk '{print $1, "\t", $3, "\t", $2}' arrayDat.txt
+>awk '{print $1, "\\t", $3, "\\t", $2}' arrayDat.txt
 
 
 # print the number of fields for each record 
@@ -419,14 +419,14 @@
 # A useful step is to linearize your sequences (i.e. remove the sequence wrapping).
 
 
->sed -e 's/\(^>.*$\)/#\1#/' file.fasta | tr -d "\r" | tr -d "\n" | sed -e 's/$/#/' | tr "#" "\n" | sed -e '/^$/d'
+>sed -e 's/\(^>.*$\)/#\1#/' file.fasta | tr -d "\r" | tr -d "\\n" | sed -e 's/$/#/' | tr "#" "\\n" | sed -e '/^$/d'
 
 
 
 # Remove duplicated sequences.
 
 
->sed -e '/^>/s/$/@/' -e 's/^>/#/' file.fasta | tr -d '\n' | tr "#" "\n" | tr "@" "\t" | sort -u -t $'\t' -f -k 2,2  | sed -e 's/^/>/' -e 's/\t/\n/'
+>sed -e '/^>/s/$/@/' -e 's/^>/#/' file.fasta | tr -d '\\n' | tr "#" "\\n" | tr "@" "\\t" | sort -u -t $'\\t' -f -k 2,2  | sed -e 's/^/>/' -e 's/\\t/\\n/'
 
 
 
@@ -435,11 +435,11 @@
 
 >sed -e '/^>/s/$/@/' -e 's/^>/#/' file.fasta  |\
 
->tr -d '\n' | tr "#" "\n" | tr "@" "\t" |\
+>tr -d '\\n' | tr "#" "\\n" | tr "@" "\\t" |\
 
 >sort -u -t '  ' -f -k 2,2  |\
 
->sed -e 's/^/>/' -e 's/\t/\n/'
+>sed -e 's/^/>/' -e 's/     \\t/\\n/'
 
 
 
@@ -453,7 +453,7 @@
 
 >cat texto.txt | sed -n -e 's/.*<PMID>\(.*\)<\/PMID>.*/\1/p' -e 's/.*<ArticleTitle>\(.*\)<\/ArticleTitle>.*/\1/p' -e 's/.*<AbstractText>\(.*\)<\/AbstractText>.*/\1/p'
 
->cat texto.txt | sed -n -e '/<PMID>/{s/.*>\(.*\)<.*/\1/;h}' -e '/<ArticleTitle>/{s/.*>\(.*\)<.*/\1/;H}' -e '/<AbstractText>/{s/.*>\(.*\)<.*/\1/;H;g;s/\n/ /g;p}'
+>cat texto.txt | sed -n -e '/<PMID>/{s/.*>\(.*\)<.*/\1/;h}' -e '/<ArticleTitle>/{s/.*>\(.*\)<.*/\1/;H}' -e '/<AbstractText>/{s/.*>\(.*\)<.*/\1/;H;g;s/\\n/ /g;p}'
 
 
 # history
