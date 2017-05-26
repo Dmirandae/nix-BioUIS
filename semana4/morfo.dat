@@ -1,0 +1,24 @@
+xread 'Heliconoius'
+16 17
+Heliconius_melpomene_plesseni10  0000000000000000
+Heliconius_melpomene_rosina23    3031020000331331
+Heliconius_melpomene4            3031020000331331
+Heliconius_melpomene_cognata25   3031020000331331
+Heliconius_melpomene_cythera13   3031020000331331
+Heliconius_pachinus6             1031020400331331
+Heliconius_melpomene_amaryllis18 3031020050331331
+Heliconius_melpomene_melpomene19 3031320005331331
+Heliconius_melpomene_plesseni21  3031020000631331
+Heliconius_heurippa11            3031020405336131
+Heliconius_melpomene_nanna22     3031020000331331
+Heliconius_cydno1                1310332231003310
+Heliconius_melpomene_cythera24   3310332231003310
+Heliconius_sp5                   ?310332234053610
+Heliconius_hecale_zuleika9       3031020000331331
+Heliconius_melpomene_melpomene12 3310332231003310
+Heliconius_sp17                  3031020000331131
+;
+cc + 0.15;
+proc /;
+optcode u 0.15;
+;

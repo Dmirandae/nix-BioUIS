@@ -1,0 +1,45 @@
+
+Para la semana vamos a ver 
+
+-algunos cálculos básicos en awk
+
+-cmo guardar en un bash un conjunto de instrucciones
+
+-como usarlas
+
+
+
+
+para un archivo de datos con esta estructura
+
+4 columnas especie,id,long,angulo 
+
+que corresponde al angulo a la copa de un árbol particular
+la distancia en mt desde el árbol hasta el observador, 
+
+el código es
+
+
+cat Data.csv | tr ',' ' ' | awk 'NR > 1 {  s=$2*3.14159265/180; print $1,$2*sin(s)/cos(s) }'
+
+head a los datos
+
+defino una variable s, que es la columna 2 multiplicada por pi y dividido por 180
+
+uhhmm !!!!! pase de grados a radianes
+
+y dada la distancia del observador al árbol o columna 2 la operación sería long*tan_radian(angle)
+
+pero tan [tangente]  no viene en awk, 
+
+una lectura básica de manual y "google es un amigo" me dice que 
+
+tan = sin/cos
+
+http://www.thegeekstuff.com/2010/03/9-powerful-awk-numeric-built-in-functions/
+
+de ahí la forma de manejar la salida
+
+
+Este mismo código lo puedo poner en un script de bash
+OD
