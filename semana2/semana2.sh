@@ -418,3 +418,16 @@ history -w Historia.txt
 ## pais
 ## año
 
+
+## Para extraer texto con sed
+
+sed -n '/StartPattern/,/EndPattern/p' FileName
+
+
+#~ Example:
+
+sed -n '/BEGIN/,/END/p' info.txt
+
+#~ Awk Syntax:
+
+awk '/StartPattern/,/EndPattern/' FileName
