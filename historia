@@ -1,0 +1,56 @@
+ 1055  cd Documents/myPapers/blepd/
+ 1060  git log crearManual.sh
+ 1061  git log | less
+ 1062  git log | grep ^  
+ 1063  git log | grep data
+ 1064  git log | less
+ 1065  git log | grep data
+ 1066  git log | grep "data on"
+ 1067  git log | grep -A 4 "data on"
+ 1068  git log | less
+ 1069  git log | grep -B 4 "data on"
+ 1070  git log crearManual.sh
+ 1072  git log blepd.pdf
+ 1073  git log blepd.pdf 
+ 1074  ## revisar con git
+ 1075  git log blepd.pdf 
+ 1076  ## git log blepd.pdf 
+ 1077  ## git log archivo para ver los commits
+ 1078  git log blepd.pdf 
+ 1079  git log blepd.pdf | grep just
+ 1080  git log blepd.pdf | grep B -3  just
+ 1081  git log blepd.pdf | grep B 3  just
+ 1082  git log blepd.pdf | grep -B 3  just
+ 1083  git log blepd.pdf | grep -B 4  just
+ 1084  git log blepd.pdf | grep -B 4  just | grep com}
+ 1085  git log blepd.pdf | grep -B 4  just | grep com
+ 1086  git log blepd.pdf | grep -B 4  just | grep comm
+ 1087  git log blepd.pdf | grep -B 4  just | grep comm | awk '{print $2}'
+ 1088  echo {git log blepd.pdf | grep -B 4  just | grep comm | awk '{print $2}'} > t1
+ 1089  echo ${git log blepd.pdf | grep -B 4  just | grep comm | awk '{print $2}'} > t1
+ 1092  echo ${git log blepd.pdf | grep -B 4  just | grep comm | awk '{print $2}'} > t1
+ 1093  echo ${git log blepd.pdf | grep -B 4  just | grep comm | awk '{print $2}'} 
+ 1094  git log blepd.pdf | grep -B 4  just | grep comm | awk '{print $2}'} 
+ 1095  git log blepd.pdf | grep -B 4  just | grep comm | awk '{print $2}'
+ 1096  git log blepd.pdf | grep -B 4  just | grep comm | awk '{print $2}' > t1
+ 1097  cat t1
+ 1098  evince blepd.pdf &
+ 1099  cat t1
+ 1100  ${cat t1}
+ 1101  echo ${cat t1}
+ 1102  echo $[cat t1]
+ 1103  cat t1
+ 1104  geany t1
+ 1105  git checkout b8165d6d55b5b1fcb81d1978a41c172bd525d52a blepd.pdf
+ 1107  ls -lsh blepd.pdf 
+ 1108  git checkout b8165d6d55b5b1fcb81d1978a41c172bd525d52a blepd.pdf
+ 1110  sh crearManual.sh 
+ 1111  ls -lsh blepd.pdf 
+ 1112  ls
+ 1113  cat crearManual.sh 
+ 1114  ls
+ 1115  ls -lsh blepd.pdf 
+ 1116  echo "t1" > blepd.pdf
+ 1117  ls -lsh blepd.pdf 
+ 1118  git checkout b8165d6d55b5b1fcb81d1978a41c172bd525d52a blepd.pdf
+ 1119  ls -lsh blepd.pdf 
