@@ -20,7 +20,7 @@ la distancia en mt desde el árbol hasta el observador,
 el código es
 
 
-cat Data.csv | tr ',' ' ' | awk 'NR > 1 {  s=$2*3.14159265/180; print $1,$2*sin(s)/cos(s) }'
+cat Data.csv | tr ',' ' ' | awk 'NR > 1 {  s=$3*3.14159265/180; print $1,$2*sin(s)/cos(s) }'
 
 head a los datos
 

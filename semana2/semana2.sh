@@ -357,6 +357,8 @@ awk '{print $1}' DNAdata.fas > output.fas
 
 grep -o -E "^>\w+" DNAdata.fas  | tr -d ">"
 
+grep "^>" DNAdata.fas  | tr -d ">"
+
 
 #
 # A useful step is to linearize your sequences (i.e. remove the sequence wrapping).
