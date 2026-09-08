@@ -1,0 +1,11 @@
+ 2000  ## como manejar la historia
+ 2001  cat historia 
+ 2002  cat historia | awk '{print $2}'
+ 2003  cat historia | awk '{print $NF}'
+ 2004  cat historia | awk '{print "$NF"}'
+ 2005  cat historia | awk '{print NF}'
+ 2006  cat historia | awk '{for(i=2; i<=NF; i++) printf "%s ", $i; print ""}' 
+ 2007  history ° tail -4
+ 2008  history | tail -4
+ 2009  history | tail -10
+ 2010  history | tail -11 > h2
