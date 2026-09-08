@@ -1,3 +1,7 @@
+
+## comandos generales para trabajar con git
+
+
 ## para imprimir desden hasta el final
 
 cat historia | awk '{for(i=2;i<=NF;++i)printf $i" " ; print ""}'
