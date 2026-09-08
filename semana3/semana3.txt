@@ -1,0 +1,128 @@
+# Semana 3
+# Extraído del curso completo
+# Fecha de extracción: 2026-09-08 09:34:54
+
+
+# Semana 3: Aplicaciones Bioinformáticas y Automatización
+
+## Objetivos
+- Aplicar herramientas Unix a datos biológicos
+- Crear scripts de automatización
+- Procesar archivos FASTA
+- Construir flujos de trabajo reproducibles
+
+## 3.1 Procesamiento de Archivos FASTA
+
+### Contar secuencias
+```bash
+# Contar secuencias en archivo FASTA
+grep -c "^>" archivo.fasta
+
+# Extraer IDs de secuencias
+grep -o -E "^>\w+" archivo.fasta | tr -d ">"
+```
+
+### Limpieza de archivos FASTA
+```bash
+# Unificar encabezados
+sed 's/>.*/&_SUFIJO/' archivo.fasta > modificado.fasta
+
+# Extraer solo primera columna del encabezado
+awk '{print $1}' archivo.fasta > output.fasta
+```
+
+### Linealizar secuencias (eliminar wrapping)
+```bash
+sed -e 's/\(^>.*$\)/#\1#/' archivo.fasta | tr -d "\r" | tr -d "\n" | sed -e 's/$/#/' | tr "#" "\n" | sed -e '/^$/d'
+```
+
+### Eliminar secuencias duplicadas
+```bash
+sed -e '/^>/s/$/@/' -e 's/^>/#/' archivo.fasta | tr -d '\n' | tr "#" "\n" | tr "@" "\t" | sort -u -t $'\t' -f -k 2,2 | sed -e 's/^/>/' -e 's/\t/\n/'
+```
+
+## 3.2 Scripts de Bash
+
+### Estructura básica de un script
+```bash
+#!/bin/bash
+# Línea obligatoria: indica que este es un script de bash
+
+# Comentarios comienzan con #
+
+# Variables
+nombre="valor"
+echo "Mensaje: $nombre"
+
+# Uso de argumentos
+echo "Primer argumento: $1"
+echo "Segundo argumento: $2"
+
+# Ejecutar comandos
+ls -la
+```
+
+### Ejemplo de script para conversión
+```bash
+#!/bin/bash
+# calcTree.sh
+# Convierte ángulos a distancias usando tangente
+# Uso: cat entrada.csv | ./calcTree.sh > salida.csv
+
+tr ',' ' ' | awk 'NR > 1 {  
+    s=$3*3.14159265/180
+    print $1, $2*sin(s)/cos(s)
+}'
+```
+
+## 3.3 Flujos de Trabajo con Tuberías
+
+```bash
+# Procesamiento completo de datos
+cat archivo.csv | \
+    tr ',' ' ' | \
+    awk 'NR > 1 {print $0}' | \
+    sort -k 2 -n | \
+    head -n 10
+```
+
+## 3.4 Gestión de Historial
+
+```bash
+# Ver historial de comandos
+history
+
+# Guardar historial en archivo
+history -w historial.txt
+
+# Limpiar formato del historial
+sed -i 's/  / /g' historial.txt
+sed -i 's/^ //g' historial.txt
+cut -d' ' -f 2- historial.txt
+```
+
+## 3.5 Automatización con Git
+
+```bash
+# Revisar historial de cambios
+git log archivo.pdf
+
+# Buscar commits específicos
+git log archivo.pdf | grep -B 4 "patrón"
+
+# Extraer información de commits
+git log archivo.pdf | grep -B 4 "patrón" | grep comm | awk '{print $2}'
+
+# Restaurar versión específica
+git checkout commit_hash archivo.pdf
+```
+
+## Ejercicios Semana 3
+
+1. Cree un script que cuente secuencias en archivos FASTA
+2. Escriba un script que procese archivos de datos y genere estadísticas
+3. Automatice la limpieza de archivos FASTA
+4. Implemente un flujo de trabajo completo usando tuberías
+
+
+# Fin de Semana 3
