@@ -1,0 +1,23 @@
+<<<<<<< HEAD
+Historia
+
+Modifcación
+Zenodo
+Quarto
+GitLab
+Bitbucket
+Se recomienda en formato texto abierto
+Formato de texto txt.
+Readme.md (dejar escrito el tipo de archivo y qué tiene)
+=======
+Historia
+
+Modifcación
+Zenodo
+Quarto
+GitLab
+Bitbucket
+Se recomienda en formato texto abierto
+Formato de texto txt.
+Readme.md (dejar escrito el tipo de archivo y qué tiene)
+>>>>>>> 607ce72d0246e551d4e26382d908a71199c79676
